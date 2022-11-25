@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221125 12:08:41.730" rpa="false" schemaversion="3">
+<suite id="s1" name="Test login" source="c:\Users\Admin\Desktop\Pratique01\TestCases\Test login.robot">
+<test id="s1-t1" name="Test Practice01" line="12">
+<kw name="connect to practice site" library="keywords">
+<arg>${site}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221125 12:08:41.938" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20221125 12:08:41.937" endtime="20221125 12:08:44.248"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221125 12:08:44.248" endtime="20221125 12:08:44.371"/>
+</kw>
+<status status="PASS" starttime="20221125 12:08:41.936" endtime="20221125 12:08:44.371"/>
+</kw>
+<kw name="log to site" library="keywords">
+<arg>${user}</arg>
+<arg>${pass}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221125 12:08:46.375" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221125 12:08:44.372" endtime="20221125 12:08:46.375"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${userName}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221125 12:08:46.376" level="INFO">Typing text 'student' into text field 'xpath://input[@id='username']'.</msg>
+<status status="PASS" starttime="20221125 12:08:46.375" endtime="20221125 12:08:46.450"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221125 12:08:46.450" level="INFO">Typing password into text field 'xpath://input[@id='password']'.</msg>
+<msg timestamp="20221125 12:08:46.483" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221125 12:08:46.521" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221125 12:08:46.450" endtime="20221125 12:08:46.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221125 12:08:46.522" level="INFO">Clicking element 'xpath://button[@id='submit']'.</msg>
+<status status="PASS" starttime="20221125 12:08:46.521" endtime="20221125 12:08:47.351"/>
+</kw>
+<status status="PASS" starttime="20221125 12:08:44.372" endtime="20221125 12:08:47.351"/>
+</kw>
+<kw name="logout to site" library="keywords">
+<arg>${LogOut}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LogOut}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221125 12:08:47.353" level="INFO">Clicking link 'xpath://a[normalize-space()='Log out']'.</msg>
+<status status="PASS" starttime="20221125 12:08:47.352" endtime="20221125 12:08:47.701"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221125 12:08:47.701" endtime="20221125 12:08:49.814"/>
+</kw>
+<status status="PASS" starttime="20221125 12:08:47.352" endtime="20221125 12:08:49.814"/>
+</kw>
+<status status="PASS" starttime="20221125 12:08:41.935" endtime="20221125 12:08:49.815"/>
+</test>
+<status status="PASS" starttime="20221125 12:08:41.734" endtime="20221125 12:08:49.817"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test login">Test login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
